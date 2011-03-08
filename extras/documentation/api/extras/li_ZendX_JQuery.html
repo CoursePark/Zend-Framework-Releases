@@ -89,7 +89,34 @@
 <div class="tree">
 <script language="Javascript">
 if (document.getElementById) {
-						var subpackagetree = new WebFXTreeItem('<span class="sub-package">View</span>', '');
+			var tree = new WebFXTree('<span class="package">ZendX_JQuery</span>');
+		tree.setBehavior('classic');
+		tree.openIcon = 'media/images/package.png';
+		tree.icon = 'media/images/package.png';
+	
+					var todos = new WebFXTreeItem('To-do List', 'todolist.html');
+			todos.openIcon = 'media/images/Index.png';
+			todos.icon = 'media/images/Index.png';
+			tree.add(todos);
+		
+		var class_trees = new WebFXTreeItem('Class trees', 'classtrees_ZendX_JQuery.html');
+		class_trees.openIcon = 'media/images/Index.png';
+		class_trees.icon = 'media/images/Index.png';
+		tree.add(class_trees);
+
+		var elements = new WebFXTreeItem('Index of elements', 'elementindex_ZendX_JQuery.html');
+		elements.openIcon = 'media/images/Index.png';
+		elements.icon = 'media/images/Index.png';
+		tree.add(elements);
+
+		var parent_node;
+
+		
+		
+		
+			
+		
+							var subpackagetree = new WebFXTreeItem('<span class="sub-package">View</span>', '');
 		
 		subpackagetree.openIcon = 'media/images/package.png';
 		subpackagetree.icon = 'media/images/package.png';
@@ -112,6 +139,10 @@ if (document.getElementById) {
 				classe.icon = 'media/images/Class.png';
 				subpackagetree_classe.add(classe);
 							var classe = new WebFXTreeItem('ZendX_JQuery_Form_Decorator_UiWidgetElementMarker', 'ZendX_JQuery/View/ZendX_JQuery_Form_Decorator_UiWidgetElementMarker.html');
+				classe.openIcon = 'media/images/Class.png';
+				classe.icon = 'media/images/Class.png';
+				subpackagetree_classe.add(classe);
+							var classe = new WebFXTreeItem('ZendX_JQuery_Form_Exception', 'ZendX_JQuery/View/ZendX_JQuery_Form_Exception.html');
 				classe.openIcon = 'media/images/Class.png';
 				classe.icon = 'media/images/Class.png';
 				subpackagetree_classe.add(classe);
@@ -187,11 +218,11 @@ if (document.getElementById) {
 			subpackagetree_file.openIcon = 'media/images/folder.png';
 			subpackagetree_file.icon = 'media/images/folder.png';
 			
-							var file = new WebFXTreeItem('AccordionContainer.php', 'ZendX_JQuery/View/_JQuery---View---Helper---AccordionContainer.php.html');
+							var file = new WebFXTreeItem('AccordionContainer.php', 'ZendX_JQuery/View/_JQuery---Form---Decorator---AccordionContainer.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('AccordionContainer.php', 'ZendX_JQuery/View/_JQuery---Form---Decorator---AccordionContainer.php.html');
+							var file = new WebFXTreeItem('AccordionContainer.php', 'ZendX_JQuery/View/_JQuery---View---Helper---AccordionContainer.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
@@ -207,15 +238,15 @@ if (document.getElementById) {
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
+							var file = new WebFXTreeItem('AutoComplete.php', 'ZendX_JQuery/View/_JQuery---Form---Element---AutoComplete.php.html');
+				file.openIcon = 'media/images/Page.png';
+				file.icon = 'media/images/Page.png';
+				subpackagetree_file.add(file);
 							var file = new WebFXTreeItem('AutoComplete.php', 'ZendX_JQuery/View/_JQuery---View---Helper---AutoComplete.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
 							var file = new WebFXTreeItem('AutoComplete.php', 'ZendX_JQuery/View/_JQuery---Controller---Action---Helper---AutoComplete.php.html');
-				file.openIcon = 'media/images/Page.png';
-				file.icon = 'media/images/Page.png';
-				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('AutoComplete.php', 'ZendX_JQuery/View/_JQuery---Form---Element---AutoComplete.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
@@ -231,15 +262,11 @@ if (document.getElementById) {
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('DatePicker.php', 'ZendX_JQuery/View/_JQuery---View---Helper---DatePicker.php.html');
-				file.openIcon = 'media/images/Page.png';
-				file.icon = 'media/images/Page.png';
-				subpackagetree_file.add(file);
 							var file = new WebFXTreeItem('DatePicker.php', 'ZendX_JQuery/View/_JQuery---Form---Element---DatePicker.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('DialogContainer.php', 'ZendX_JQuery/View/_JQuery---View---Helper---DialogContainer.php.html');
+							var file = new WebFXTreeItem('DatePicker.php', 'ZendX_JQuery/View/_JQuery---View---Helper---DatePicker.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
@@ -247,11 +274,15 @@ if (document.getElementById) {
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('Exception.php', 'ZendX_JQuery/View/_JQuery---Exception.php.html');
+							var file = new WebFXTreeItem('DialogContainer.php', 'ZendX_JQuery/View/_JQuery---View---Helper---DialogContainer.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
 							var file = new WebFXTreeItem('Exception.php', 'ZendX_JQuery/View/_JQuery---View---Exception.php.html');
+				file.openIcon = 'media/images/Page.png';
+				file.icon = 'media/images/Page.png';
+				subpackagetree_file.add(file);
+							var file = new WebFXTreeItem('Exception.php', 'ZendX_JQuery/View/_JQuery---Exception.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
@@ -267,19 +298,19 @@ if (document.getElementById) {
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('Slider.php', 'ZendX_JQuery/View/_JQuery---View---Helper---Slider.php.html');
-				file.openIcon = 'media/images/Page.png';
-				file.icon = 'media/images/Page.png';
-				subpackagetree_file.add(file);
 							var file = new WebFXTreeItem('Slider.php', 'ZendX_JQuery/View/_JQuery---Form---Element---Slider.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('Spinner.php', 'ZendX_JQuery/View/_JQuery---Form---Element---Spinner.php.html');
+							var file = new WebFXTreeItem('Slider.php', 'ZendX_JQuery/View/_JQuery---View---Helper---Slider.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
 							var file = new WebFXTreeItem('Spinner.php', 'ZendX_JQuery/View/_JQuery---View---Helper---Spinner.php.html');
+				file.openIcon = 'media/images/Page.png';
+				file.icon = 'media/images/Page.png';
+				subpackagetree_file.add(file);
+							var file = new WebFXTreeItem('Spinner.php', 'ZendX_JQuery/View/_JQuery---Form---Element---Spinner.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
@@ -299,11 +330,11 @@ if (document.getElementById) {
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('UiWidget.php', 'ZendX_JQuery/View/_JQuery---Form---Element---UiWidget.php.html');
+							var file = new WebFXTreeItem('UiWidget.php', 'ZendX_JQuery/View/_JQuery---View---Helper---UiWidget.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
-							var file = new WebFXTreeItem('UiWidget.php', 'ZendX_JQuery/View/_JQuery---View---Helper---UiWidget.php.html');
+							var file = new WebFXTreeItem('UiWidget.php', 'ZendX_JQuery/View/_JQuery---Form---Element---UiWidget.php.html');
 				file.openIcon = 'media/images/Page.png';
 				file.icon = 'media/images/Page.png';
 				subpackagetree_file.add(file);
@@ -407,49 +438,6 @@ if (document.getElementById) {
 				
 			
 	  tree.add(subpackagetree);
-				var tree = new WebFXTree('<span class="package">ZendX_JQuery</span>');
-		tree.setBehavior('classic');
-		tree.openIcon = 'media/images/package.png';
-		tree.icon = 'media/images/package.png';
-	
-					var todos = new WebFXTreeItem('To-do List', 'todolist.html');
-			todos.openIcon = 'media/images/Index.png';
-			todos.icon = 'media/images/Index.png';
-			tree.add(todos);
-		
-		var class_trees = new WebFXTreeItem('Class trees', 'classtrees_ZendX_JQuery.html');
-		class_trees.openIcon = 'media/images/Index.png';
-		class_trees.icon = 'media/images/Index.png';
-		tree.add(class_trees);
-
-		var elements = new WebFXTreeItem('Index of elements', 'elementindex_ZendX_JQuery.html');
-		elements.openIcon = 'media/images/Index.png';
-		elements.icon = 'media/images/Index.png';
-		tree.add(elements);
-
-		var parent_node;
-
-		
-					var tree_classe = new WebFXTreeItem('Interface(s)', '');
-			tree_classe.openIcon = 'media/images/class_folder.png';
-			tree_classe.icon = 'media/images/class_folder.png';
-			
-						    				
-			tree.add(tree_classe);
-		
-					var tree_classe = new WebFXTreeItem('Class(es)', '');
-			tree_classe.openIcon = 'media/images/class_folder.png';
-			tree_classe.icon = 'media/images/class_folder.png';
-			
-						    				var classe = new WebFXTreeItem('ZendX_JQuery_Form_Exception', 'ZendX_JQuery/ZendX_JQuery_Form_Exception.html');
-				classe.openIcon = 'media/images/Class.png';
-				classe.icon = 'media/images/Class.png';
-				tree_classe.add(classe);
-								
-			tree.add(tree_classe);
-		
-			
-		
 	
 document.write(tree);
 }
@@ -457,7 +445,7 @@ document.write(tree);
 </div>
 <p class="notes">
 	Generated by 
-	<a href="http://www.phpdoc.org" target="_blank">phpDocumentor <span class="field">1.4.2</span></a>
+	<a href="http://www.phpdoc.org" target="_blank">phpDocumentor <span class="field">1.4.3</span></a>
 </p>
 </body>
 </html>

@@ -3,8 +3,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>2.3. ZendX_JQuery Form Elements and Decorators</title>
 <link rel="stylesheet" href="dbstyle.css" type="text/css">
-<meta name="generator" content="DocBook XSL Stylesheets V1.72.0">
-<link rel="start" href="index.html" title="Programmer's Reference Guide">
+<meta name="generator" content="DocBook XSL Stylesheets V1.75.2">
+<link rel="home" href="index.html" title="Programmer's Reference Guide">
 <link rel="up" href="zendx.jquery.html" title="Chapter 2. ZendX_JQuery">
 <link rel="prev" href="zendx.jquery.view.html" title="2.2. ZendX_JQuery View Helpers">
 <link rel="next" href="the.index.html" title="Index">
@@ -26,7 +26,7 @@
 </td>
 </tr>
 </table></div>
-<div class="sect1" lang="en">
+<div class="sect1" title="2.3. ZendX_JQuery Form Elements and Decorators">
 <div class="titlepage"><div><div><h2 class="title" style="clear: both">
 <a name="zendx.jquery.form"></a>2.3. ZendX_JQuery Form Elements and Decorators</h2></div></div></div>
 <p>All View Helpers are pressed into Zend_Form elements or decorators also. They can even be
@@ -34,7 +34,7 @@
         you can use two ways: Init your form as <code class="code">$form = new ZendX_JQuery_Form();</code> or
         use the static method <code class="methodname">ZendX_JQuery::enableForm($form)</code> to enable jQuery element support.
     </p>
-<div class="sect2" lang="en">
+<div class="sect2" title="2.3.1. General Elements and Decorator Usage">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="zendx.jquery.form.usage"></a>2.3.1. General Elements and Decorator Usage</h3></div></div></div>
 <p>Both elements and decorators of the Zend jQuery Form set can be initialized with
@@ -50,13 +50,13 @@ $element = new ZendX_JQuery_Form_Element_DatePicker(
 $view-&gt;datePicker("dp1", "", array('defaultDate' =&gt; '2007/10/10'), array());
 </pre>
 <p>Additionally elements jQuery options can be customized by the following methods:</p>
-<div class="itemizedlist"><ul type="disc">
-<li><p><code class="methodname">setJQueryParam($name, $value)</code>: Set the jQuery option <code class="varname">$name</code> to
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p><code class="methodname">setJQueryParam($name, $value)</code>: Set the jQuery option <code class="varname">$name</code> to
                     the given value.</p></li>
-<li><p><code class="methodname">setJQueryParams($params)</code>: Set key value pairs of jQuery options and merge
+<li class="listitem"><p><code class="methodname">setJQueryParams($params)</code>: Set key value pairs of jQuery options and merge
                     them with the already set options.</p></li>
-<li><p><code class="methodname">getJQueryParam($name)</code>: Return the jQuery option with the given name.</p></li>
-<li><p><code class="methodname">getJQueryParams()</code>: Return an array of all currently set jQuery options.</p></li>
+<li class="listitem"><p><code class="methodname">getJQueryParam($name)</code>: Return the jQuery option with the given name.</p></li>
+<li class="listitem"><p><code class="methodname">getJQueryParams()</code>: Return an array of all currently set jQuery options.</p></li>
 </ul></div>
 <p>Each jQuery related Decorator also owns a <code class="methodname">getJQueryParams()</code> method, to set options you have to
             use the <code class="methodname">setDecorators()</code>, <code class="methodname">addDecorator()</code> or <code class="methodname">addDecorators()</code> functionality
@@ -76,18 +76,18 @@ $form-&gt;setDecorators(array(
 ));
 </pre>
 </div>
-<div class="sect2" lang="en">
+<div class="sect2" title="2.3.2. Form Elements">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="zendx.jquery.form.elements"></a>2.3.2. Form Elements</h3></div></div></div>
 <p>The Zend Framework jQuery Extras Extension comes with the following Form Elements:</p>
-<div class="itemizedlist"><ul type="disc">
-<li><p><code class="code">ZendX_JQuery_Form_Element_AutoComplete</code>: Proxy to AutoComplete View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Element_ColorPicker</code>: Proxy to ColorPicker View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Element_DatePicker</code>: Proxy to DatePicker View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Element_Slider</code>: Proxy to Slider View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Element_Spinner</code>: Proxy to Spinner View Helper</p></li>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Element_AutoComplete</code>: Proxy to AutoComplete View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Element_ColorPicker</code>: Proxy to ColorPicker View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Element_DatePicker</code>: Proxy to DatePicker View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Element_Slider</code>: Proxy to Slider View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Element_Spinner</code>: Proxy to Spinner View Helper</p></li>
 </ul></div>
-<div class="note"><table border="0" summary="Note: jQuery Decorators: Beware the Marker Interface for UiWidgetElements">
+<div class="note" title="jQuery Decorators: Beware the Marker Interface for UiWidgetElements"><table border="0" summary="Note: jQuery Decorators: Beware the Marker Interface for UiWidgetElements">
 <tr>
 <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.png"></td>
 <th align="left">
@@ -103,17 +103,17 @@ $form-&gt;setDecorators(array(
             </p></td></tr>
 </table></div>
 </div>
-<div class="sect2" lang="en">
+<div class="sect2" title="2.3.3. Form Decorators">
 <div class="titlepage"><div><div><h3 class="title">
 <a name="zendx.jquery.form.decorators"></a>2.3.3. Form Decorators</h3></div></div></div>
 <p>The following Decorators come with the Zend Framework jQuery Extension:</p>
-<div class="itemizedlist"><ul type="disc">
-<li><p><code class="code">ZendX_JQuery_Form_Decorator_AccordionContainer</code>: Proxy to AccordionContainer View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Decorator_AccordionPane</code>: Proxy to AccordionPane View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Decorator_DialogContainer</code>: Proxy to DialogContainer View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Decorator_TabContainer</code>: Proxy to TabContainer View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Decorator_TabPane</code>: Proxy to TabPane View Helper</p></li>
-<li><p><code class="code">ZendX_JQuery_Form_Decorator_UiWidgetElement</code>: Decorator to Display jQuery Form Elements</p></li>
+<div class="itemizedlist"><ul class="itemizedlist" type="disc">
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Decorator_AccordionContainer</code>: Proxy to AccordionContainer View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Decorator_AccordionPane</code>: Proxy to AccordionPane View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Decorator_DialogContainer</code>: Proxy to DialogContainer View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Decorator_TabContainer</code>: Proxy to TabContainer View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Decorator_TabPane</code>: Proxy to TabPane View Helper</p></li>
+<li class="listitem"><p><code class="code">ZendX_JQuery_Form_Decorator_UiWidgetElement</code>: Decorator to Display jQuery Form Elements</p></li>
 </ul></div>
 <p>Utilizing the Container elements is a bit more complicated, the following example builds a Form with 2 SubForms in a TabContainer:</p>
 <div class="example">
